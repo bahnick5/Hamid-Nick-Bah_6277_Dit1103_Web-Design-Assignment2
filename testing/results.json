@@ -1,0 +1,296 @@
+[
+ {
+  "cat": "Browser (Chrome)",
+  "test": "index.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "rooms.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "room.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "list-room.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "about.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "faq.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "contact.html loads",
+  "expected": "Page renders, title present",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "No JavaScript errors on any page",
+  "expected": "0 console errors",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Browser (Chrome)",
+  "test": "No broken local files (404)",
+  "expected": "All CSS/JS/images load",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Navigation",
+  "test": "All internal links (7 pages)",
+  "expected": "Every link returns the page",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Navigation",
+  "test": "Logo returns to Home",
+  "expected": "URL ends index.html",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Navigation",
+  "test": "Room card -> Room Details",
+  "expected": "room.html?id=\u2026 opens with room name",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Navigation",
+  "test": "Current page highlighted in menu",
+  "expected": "aria-current set on 'Find a Room'",
+  "result": "Pass",
+  "note": "['Find a Room']"
+ },
+ {
+  "cat": "Features",
+  "test": "Price filter (max 1,000)",
+  "expected": "Only rooms <= NLe 1,000",
+  "result": "Pass",
+  "note": "3 of 8 shown"
+ },
+ {
+  "cat": "Features",
+  "test": "Verified-only filter",
+  "expected": "Only verified rooms",
+  "result": "Pass",
+  "note": "5 of 8"
+ },
+ {
+  "cat": "Features",
+  "test": "Search with no match",
+  "expected": "Empty-state message",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Sort price low to high",
+  "expected": "Ascending prices",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Save favourite + Saved-only view",
+  "expected": "1 room shown",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Home search passes area+budget to Find a Room",
+  "expected": "Hill Station, <= 2,000 pre-filled",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Photo gallery thumbnails",
+  "expected": "Main photo changes",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "WhatsApp + Call buttons",
+  "expected": "wa.me and tel: links",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Map embed present",
+  "expected": "OpenStreetMap iframe",
+  "result": "Pass",
+  "note": "Needs internet to display tiles"
+ },
+ {
+  "cat": "Features",
+  "test": "FAQ accordion",
+  "expected": "One panel open at a time",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Dark mode toggle",
+  "expected": "data-theme=dark",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Features",
+  "test": "Dark mode remembered after reload",
+  "expected": "Still dark",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Form",
+  "test": "Contact: empty submit blocked",
+  "expected": "3 required errors shown",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Form",
+  "test": "Contact: invalid email + short message",
+  "expected": "Both flagged",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Form",
+  "test": "Contact: valid submit",
+  "expected": "Success message",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Form",
+  "test": "List a Room: bad phone/price/empty fields",
+  "expected": "Blocked with errors",
+  "result": "Pass",
+  "note": "6 errors"
+ },
+ {
+  "cat": "Form",
+  "test": "List a Room: valid submit",
+  "expected": "Success message",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Mobile",
+  "test": "mobile 375px: no horizontal scrolling (all pages)",
+  "expected": "scrollWidth <= viewport",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Mobile",
+  "test": "Hamburger shown, menu hidden at 375px",
+  "expected": "Menu collapsed",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Mobile",
+  "test": "Hamburger opens menu",
+  "expected": "Links visible",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Mobile",
+  "test": "Tap targets >= 36px",
+  "expected": "No small buttons",
+  "result": "Pass",
+  "note": "0 small"
+ },
+ {
+  "cat": "Mobile",
+  "test": "Room grid is 1 column",
+  "expected": "1 column",
+  "result": "Pass",
+  "note": "1"
+ },
+ {
+  "cat": "Responsive",
+  "test": "tablet 768px: no horizontal scrolling (all pages)",
+  "expected": "scrollWidth <= viewport",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Responsive",
+  "test": "Tablet room grid",
+  "expected": "2 columns",
+  "result": "Pass",
+  "note": "2"
+ },
+ {
+  "cat": "Responsive",
+  "test": "laptop 1280px: no horizontal scrolling (all pages)",
+  "expected": "scrollWidth <= viewport",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Responsive",
+  "test": "Desktop room grid",
+  "expected": "3 columns",
+  "result": "Pass",
+  "note": "3"
+ },
+ {
+  "cat": "Responsive",
+  "test": "wide 1920px: no horizontal scrolling (all pages)",
+  "expected": "scrollWidth <= viewport",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Accessibility",
+  "test": "All images have alt text",
+  "expected": "0 missing",
+  "result": "Pass",
+  "note": ""
+ },
+ {
+  "cat": "Accessibility",
+  "test": "Form fields labelled (home)",
+  "expected": "0 unlabelled",
+  "result": "Pass",
+  "note": ""
+ }
+]

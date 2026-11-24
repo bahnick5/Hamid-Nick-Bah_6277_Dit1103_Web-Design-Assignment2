@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find a Room | FindHome SL</title>
+<meta name="description" content="Search and filter student rooms in Freetown by price, area, distance and facilities.">
+<meta name="theme-color" content="#0b5d5e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem("fh_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html" aria-label="FindHome SL – home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f4a62a"/><path d="M10 24 24 12l14 12v14H10z" fill="#073f40"/><circle cx="24" cy="26" r="5" fill="#f4a62a"/><path d="M24 31l-4-5a5 5 0 1 1 8 0z" fill="#f4a62a"/><circle cx="24" cy="25" r="2" fill="#073f40"/></svg><span>FindHome <em>SL</em></span></a>
+    <nav class="header-actions" aria-label="Main">
+      <ul class="nav-links" id="menu"><li><a href="index.html">Home</a></li><li><a href="rooms.html" aria-current="page">Find a Room</a></li><li><a href="list-room.html">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <button class="theme-btn" type="button" aria-label="Toggle dark mode">☾ Dark</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section"><div class="container">
+  <p class="eyebrow">Find a Room</p><h1>Search student rooms</h1>
+  <p class="lead">Filter by price, area, distance and facilities. Tap the heart to save rooms you like.</p>
+  <form class="toolbar" style="margin-top:1.5rem" onsubmit="return false" aria-label="Room filters">
+    <div class="field"><label for="f-text">Search</label><input id="f-text" type="search" placeholder="Name, area or type"></div>
+    <div class="field"><label for="f-area">Area</label><select id="f-area"><option value="">Any area</option></select></div>
+    <div class="field"><label for="f-price">Max rent</label><select id="f-price"><option value="">Any</option><option value="1000">NLe 1,000</option><option value="2000">NLe 2,000</option><option value="3000">NLe 3,000</option></select></div>
+    <div class="field"><label for="f-dist">Max distance</label><select id="f-dist"><option value="">Any</option><option value="1">1 km</option><option value="3">3 km</option><option value="6">6 km</option></select></div>
+    <div class="field"><label for="f-sort">Sort by</label><select id="f-sort"><option value="rating">Top rated</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="distance">Nearest to campus</option></select></div>
+    <fieldset style="border:0;padding:0;margin:0;grid-column:1/-1"><legend class="hint">Must have</legend><div id="f-fac" style="display:flex;flex-wrap:wrap;gap:1rem"></div></fieldset>
+    <label class="check"><input id="f-verified" type="checkbox"> Verified landlords only</label>
+    <label class="check"><input id="f-favs" type="checkbox"> Saved rooms only</label>
+    <button class="btn secondary small" type="button" id="reset-top">Reset filters</button>
+  </form>
+  <p class="result-count" id="count" aria-live="polite"></p><p class="hint">Sample listings use illustrative room images. Always view and verify a property before paying.</p>
+  <div class="grid cols-3" id="results"></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h3>FindHome SL</h3><p>A simple, mobile-friendly way for students in Freetown to find safe, affordable rooms near campus.</p></div>
+    <div><h3>Quick links</h3><ul><li><a href="rooms.html">Find a Room</a></li><li><a href="list-room.html">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li>📍 Limkokwing University, Freetown</li><li>📞 +232 32 919141</li><li>✉ hello@findhomesl.example</li><li><a href="contact.html">Send a message</a></li></ul></div>
+  </div>
+  <div class="container copyright">© <span id="year">2026</span> FindHome SL · DCOMP 204 Web Design final project, Limkokwing University of Creative Technology, Sierra Leone. Listings are sample data.</div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/rooms.js"></script>
+</body>
+</html>

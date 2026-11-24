@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | FindHome SL</title>
+<meta name="description" content="Contact FindHome SL by form, phone, email or WhatsApp.">
+<meta name="theme-color" content="#0b5d5e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem("fh_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html" aria-label="FindHome SL – home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f4a62a"/><path d="M10 24 24 12l14 12v14H10z" fill="#073f40"/><circle cx="24" cy="26" r="5" fill="#f4a62a"/><path d="M24 31l-4-5a5 5 0 1 1 8 0z" fill="#f4a62a"/><circle cx="24" cy="25" r="2" fill="#073f40"/></svg><span>FindHome <em>SL</em></span></a>
+    <nav class="header-actions" aria-label="Main">
+      <ul class="nav-links" id="menu"><li><a href="index.html">Home</a></li><li><a href="rooms.html">Find a Room</a></li><li><a href="list-room.html">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+      <button class="theme-btn" type="button" aria-label="Toggle dark mode">☾ Dark</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section"><div class="container">
+  <p class="eyebrow">Contact</p><h1>We would love to hear from you</h1>
+  <div class="split" style="margin-top:1.5rem;align-items:start">
+    <form class="card card-body" data-validate="messages" data-success="Thank you! Your message has been sent. We will reply within 2 working days. (Demo: saved on this device only.)" novalidate>
+      <div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" autocomplete="name" data-rules="required name"><span class="error-msg" aria-live="polite"></span></div>
+      <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" data-rules="required email"><span class="error-msg" aria-live="polite"></span></div>
+      <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="5" data-rules="required min" data-min="10"></textarea><span class="error-msg" aria-live="polite"></span></div>
+      <button class="btn" type="submit">Send message</button>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+    <div>
+      <h2>Contact details</h2>
+      <p>📞 <a href="tel:+23232919141">+232 32 919141</a></p>
+      <p>✉ <a href="mailto:hello@findhomesl.example">hello@findhomesl.example</a></p>
+      <p>📍 Limkokwing University of Creative Technology, Freetown, Sierra Leone</p>
+      <p>💬 <a href="https://wa.me/23232919141" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+      <p class="hint">The email address is a placeholder for the demo.</p>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h3>FindHome SL</h3><p>A simple, mobile-friendly way for students in Freetown to find safe, affordable rooms near campus.</p></div>
+    <div><h3>Quick links</h3><ul><li><a href="rooms.html">Find a Room</a></li><li><a href="list-room.html">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li>📍 Limkokwing University, Freetown</li><li>📞 +232 32 919141</li><li>✉ hello@findhomesl.example</li><li><a href="contact.html">Send a message</a></li></ul></div>
+  </div>
+  <div class="container copyright">© <span id="year">2026</span> FindHome SL · DCOMP 204 Web Design final project, Limkokwing University of Creative Technology, Sierra Leone. Listings are sample data.</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

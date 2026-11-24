@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>List a Room | FindHome SL</title>
+<meta name="description" content="Landlords and agents: list your student room in Freetown with a short form.">
+<meta name="theme-color" content="#0b5d5e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem("fh_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html" aria-label="FindHome SL – home"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#f4a62a"/><path d="M10 24 24 12l14 12v14H10z" fill="#073f40"/><circle cx="24" cy="26" r="5" fill="#f4a62a"/><path d="M24 31l-4-5a5 5 0 1 1 8 0z" fill="#f4a62a"/><circle cx="24" cy="25" r="2" fill="#073f40"/></svg><span>FindHome <em>SL</em></span></a>
+    <nav class="header-actions" aria-label="Main">
+      <ul class="nav-links" id="menu"><li><a href="index.html">Home</a></li><li><a href="rooms.html">Find a Room</a></li><li><a href="list-room.html" aria-current="page">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <button class="theme-btn" type="button" aria-label="Toggle dark mode">☾ Dark</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section"><div class="container" style="max-width:780px">
+  <p class="eyebrow">For landlords &amp; agents</p><h1>List your room</h1>
+  <p class="lead">Fill in the short form below. We check your details and add a Verified label once confirmed.</p>
+  <form class="card card-body" style="margin-top:1.5rem" data-validate="listings" data-success="Thank you! Your room has been received and will be reviewed shortly. (Demo: saved on this device only.)" novalidate>
+    <div class="field"><label for="l-name">Your full name</label><input id="l-name" name="name" autocomplete="name" data-rules="required name"><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-phone">WhatsApp / phone number</label><input id="l-phone" name="phone" type="tel" autocomplete="tel" placeholder="+232 76 123456" data-rules="required slphone"><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-email">Email (optional)</label><input id="l-email" name="email" type="email" autocomplete="email" data-rules="email"><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-title">Room or house name</label><input id="l-title" name="title" data-rules="required min" data-min="5"><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-area">Area</label><select id="l-area" name="area" data-rules="required"><option value="">Choose area…</option><option>Hill Station</option><option>Wilberforce</option><option>Lumley</option><option>Congo Cross</option><option>Aberdeen</option><option>Goderich</option><option>Kissy</option><option>Other</option></select><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-type">Room type</label><select id="l-type" name="type" data-rules="required"><option value="">Choose type…</option><option>Single room</option><option>Shared room</option><option>Studio</option><option>Hostel</option></select><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="l-price">Rent per month (NLe)</label><input id="l-price" name="price" type="number" inputmode="numeric" data-rules="required price"><span class="error-msg" aria-live="polite"></span></div>
+    <fieldset style="border:0;padding:0;margin:0 0 1rem"><legend><strong>Facilities</strong></legend><div style="display:flex;flex-wrap:wrap;gap:1rem"><label class="check"><input type="checkbox" name="facilities" value="Water"> Water</label><label class="check"><input type="checkbox" name="facilities" value="Electricity"> Electricity</label><label class="check"><input type="checkbox" name="facilities" value="Security"> Security</label><label class="check"><input type="checkbox" name="facilities" value="Wi-Fi"> Wi-Fi</label></div></fieldset>
+    <div class="field"><label for="l-desc">Description</label><textarea id="l-desc" name="description" rows="4" data-rules="required min" data-min="20"></textarea><span class="hint">At least 20 characters. Mention distance to campus and house rules.</span><span class="error-msg" aria-live="polite"></span></div>
+    <div class="field"><label for="photos">Photos (up to 5, JPG/PNG/WebP, max 2 MB each)</label><input id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple><span class="error-msg" id="photos-err" aria-live="polite"></span><div id="preview" style="display:flex;gap:.5rem;flex-wrap:wrap"></div></div>
+    <div class="field"><label class="check"><input type="checkbox" name="consent" data-rules="required"> I confirm the details are true and I am allowed to rent out this room.</label><span class="error-msg" aria-live="polite"></span></div>
+    <button class="btn" type="submit">Submit my room</button>
+    <div class="form-status" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h3>FindHome SL</h3><p>A simple, mobile-friendly way for students in Freetown to find safe, affordable rooms near campus.</p></div>
+    <div><h3>Quick links</h3><ul><li><a href="rooms.html">Find a Room</a></li><li><a href="list-room.html">List a Room</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li>📍 Limkokwing University, Freetown</li><li>📞 +232 32 919141</li><li>✉ hello@findhomesl.example</li><li><a href="contact.html">Send a message</a></li></ul></div>
+  </div>
+  <div class="container copyright">© <span id="year">2026</span> FindHome SL · DCOMP 204 Web Design final project, Limkokwing University of Creative Technology, Sierra Leone. Listings are sample data.</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>
